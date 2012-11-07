@@ -10,11 +10,16 @@ Transpilers (other than `CoffeeScript`, for now) are supported via plugins.
 
 ### How?
 
+#### Installation
+
+```sh
+cd ~/org/repo
+npm i livescript-browserify
+```
+
 #### CLI
 
 ```sh
-sudo npm -g i livescript-browserify
-cd ~/org/repo
 browserify --plugin livescript-browserify
 ```
 
