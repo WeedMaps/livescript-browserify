@@ -20,7 +20,7 @@ browserify --plugin livescript-browserify
 
 #### API
 
-```ls
+```coffee
 bundle = browserify "#{__dirname}/entry.ls"
 bundle.use require 'livescript-browserify'
 ```
