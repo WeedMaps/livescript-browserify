@@ -1,3 +1,30 @@
-# LiveScript-browserify
+### What?
 
 A browserify plugin for LiveScript.
+
+### Why?
+
+[browserify](http://github.com/substack/browserify) only supports `JavaScript` and `CoffeeScript` out-of-the-box.
+
+Transpilers (other than `CoffeeScript`, for now) are supported via plugins.
+
+### How?
+
+#### CLI
+
+```sh
+sudo npm -g i livescript-browserify
+cd ~/org/repo
+browserify --plugin livescript-browserify
+```
+
+#### API
+
+```ls
+bundle = browserify "#{__dirname}/entry.ls"
+bundle.use require 'livescript-browserify'
+```
+
+### Testing
+
+Not just yet. Please lodge any issues you find :)
